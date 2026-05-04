@@ -1,0 +1,165 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+Estrutura Adminsitrativa site final
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="png_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 5;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.236220;
+	viewMgr.visBBoxRight = 11.456693;
+	viewMgr.visBBoxBottom = 1.062992;
+	viewMgr.visBBoxTop = 7.141035;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Mostra o local da forma selecionada" src="arrow.png"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+<script type="text/javascript" language="javascript">
+// Displays the banner prompt to install Silverlight
+if (parent.slSupported && !parent.slInstalled)
+{
+	var slBanner = document.createElement("div");
+	slBanner.className = "banner";
+	slBanner.innerHTML = 'Para habilitar funcionalidade total, como Panorâmica e Zoom, <a href="https://www.microsoft.com/silverlight/resources/install.aspx" target="parent">clique aqui</a> para instalar o plug-in do Silverlight.';
+
+	document.body.appendChild(slBanner);
+	document.body.style.paddingTop = "2.5em";
+}
+</script>
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="png_3.png" ALT="Diretoria de Planejamento e Orçamento" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="Diretoria de Planejamento e Orçamento" origTitle="Diretoria de Planejamento e Orçamento" TITLE="Diretoria de Planejamento e Orçamento"  target="_top" COORDS="0,0,607,247,611,240,0,0,0,0" onmouseover="UpdateTooltip(this,5,51,event)" onfocus="UpdateTooltip(this,5,51,event)" onclick="return OnShapeClick(5,51,event);" onkeyup="OnShapeKey(5,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Diretoria de Planejamento e Orçamento" origTitle="Diretoria de Planejamento e Orçamento" TITLE="Diretoria de Planejamento e Orçamento"  target="_top" COORDS="563,281,729,281,734,280,739,278,743,274,746,270,748,265,748,260,747,254,744,250,741,246,641,167,637,164,633,163,628,163,623,164,619,166,615,170,549,249,546,253,544,258,544,264,546,269,549,274,553,278,558,280,563,281" onmouseover="UpdateTooltip(this,5,51,event)" onfocus="UpdateTooltip(this,5,51,event)" onclick="return OnShapeClick(5,51,event);" onkeyup="OnShapeKey(5,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Pagadoria" origTitle="Pagadoria" TITLE="Pagadoria"  target="_top" COORDS="0,0,351,245,357,239,0,0,0,0" onmouseover="UpdateTooltip(this,5,42,event)" onfocus="UpdateTooltip(this,5,42,event)" onclick="return OnShapeClick(5,42,event);" onkeyup="OnShapeKey(5,42,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Pagadoria" origTitle="Pagadoria" TITLE="Pagadoria"  target="_top" COORDS="309,280,475,280,480,279,485,276,489,273,492,268,493,263,494,258,493,253,490,248,486,244,387,165,383,163,378,161,373,161,368,162,364,165,361,168,294,247,291,252,290,257,290,262,291,268,294,272,298,276,303,278,309,280" onmouseover="UpdateTooltip(this,5,42,event)" onfocus="UpdateTooltip(this,5,42,event)" onclick="return OnShapeClick(5,42,event);" onkeyup="OnShapeKey(5,42,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Diretoria de Planejamento e Orçamento" origTitle="Diretoria de Planejamento e Orçamento" TITLE="Diretoria de Planejamento e Orçamento" HREF="png_1.htm" target="frmDrawing" COORDS="0,0,460,53,462,45,0,0,0,0" onmouseover="UpdateTooltip(this,5,33,event)" onfocus="UpdateTooltip(this,5,33,event)" onclick="return OnShapeClick(5,33,event);" onkeyup="OnShapeKey(5,33,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Diretoria de Planejamento e Orçamento" origTitle="Diretoria de Planejamento e Orçamento" TITLE="Diretoria de Planejamento e Orçamento" HREF="png_1.htm" target="frmDrawing" COORDS="565,79,600,67,604,64,608,61,611,56,612,51,617,24,617,18,616,13,613,8,609,4,604,1,598,0,433,0,427,1,422,4,418,8,415,13,414,18,414,24,427,103,429,108,432,112,436,116,441,118,447,119,452,118,557,81,565,81,565,79" onmouseover="UpdateTooltip(this,5,33,event)" onfocus="UpdateTooltip(this,5,33,event)" onclick="return OnShapeClick(5,33,event);" onkeyup="OnShapeKey(5,33,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>

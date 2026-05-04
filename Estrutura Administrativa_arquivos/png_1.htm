@@ -1,0 +1,169 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+Estrutura Adminsitrativa site final
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="png_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 0;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.295275;
+	viewMgr.visBBoxRight = 11.515748;
+	viewMgr.visBBoxBottom = 1.181102;
+	viewMgr.visBBoxTop = 7.141035;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Mostra o local da forma selecionada" src="arrow.png"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+<script type="text/javascript" language="javascript">
+// Displays the banner prompt to install Silverlight
+if (parent.slSupported && !parent.slInstalled)
+{
+	var slBanner = document.createElement("div");
+	slBanner.className = "banner";
+	slBanner.innerHTML = 'Para habilitar funcionalidade total, como Panorâmica e Zoom, <a href="https://www.microsoft.com/silverlight/resources/install.aspx" target="parent">clique aqui</a> para instalar o plug-in do Silverlight.';
+
+	document.body.appendChild(slBanner);
+	document.body.style.paddingTop = "2.5em";
+}
+</script>
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="png_1.png" ALT="ESTRUTURA ADMINISTRATIVA" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="Procuradoria Jurídica" origTitle="Procuradoria Jurídica" TITLE="Procuradoria Jurídica" HREF="png_4.htm" target="frmDrawing" COORDS="0,0,941,210,944,202,0,0,0,0" onmouseover="UpdateTooltip(this,0,91,event)" onfocus="UpdateTooltip(this,0,91,event)" onclick="return OnShapeClick(0,91,event);" onkeyup="OnShapeKey(0,91,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Procuradoria Jurídica" origTitle="Procuradoria Jurídica" TITLE="Procuradoria Jurídica" HREF="png_4.htm" target="frmDrawing" COORDS="795,223,957,260,963,260,969,259,973,256,977,252,979,247,980,242,980,169,979,164,977,159,973,155,969,152,963,151,957,151,795,188,790,190,785,193,782,198,781,203,781,208,782,213,785,218,790,221,795,223" onmouseover="UpdateTooltip(this,0,91,event)" onfocus="UpdateTooltip(this,0,91,event)" onclick="return OnShapeClick(0,91,event);" onkeyup="OnShapeKey(0,91,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Diretoria de Planejamento e Orçamento" origTitle="Diretoria de Planejamento e Orçamento" TITLE="Diretoria de Planejamento e Orçamento" HREF="png_3.htm" target="frmDrawing" COORDS="0,0,702,210,706,202,0,0,0,0" onmouseover="UpdateTooltip(this,0,82,event)" onfocus="UpdateTooltip(this,0,82,event)" onclick="return OnShapeClick(0,82,event);" onkeyup="OnShapeKey(0,82,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Diretoria de Planejamento e Orçamento" origTitle="Diretoria de Planejamento e Orçamento" TITLE="Diretoria de Planejamento e Orçamento" HREF="png_3.htm" target="frmDrawing" COORDS="557,223,719,260,725,260,730,259,735,256,739,252,741,247,742,242,742,169,741,164,739,159,735,155,730,152,725,151,719,151,557,188,551,190,547,193,544,198,542,203,542,208,544,213,547,218,551,221,557,223" onmouseover="UpdateTooltip(this,0,82,event)" onfocus="UpdateTooltip(this,0,82,event)" onclick="return OnShapeClick(0,82,event);" onkeyup="OnShapeKey(0,82,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Coordenadoria Geral da Câmara" origTitle="Coordenadoria Geral da Câmara" TITLE="Coordenadoria Geral da Câmara" HREF="png_2.htm" target="frmDrawing" COORDS="0,0,453,205,457,198,0,0,0,0" onmouseover="UpdateTooltip(this,0,73,event)" onfocus="UpdateTooltip(this,0,73,event)" onclick="return OnShapeClick(0,73,event);" onkeyup="OnShapeKey(0,73,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Coordenadoria Geral da Câmara" origTitle="Coordenadoria Geral da Câmara" TITLE="Coordenadoria Geral da Câmara" HREF="png_2.htm" target="frmDrawing" COORDS="308,219,470,255,476,255,481,254,486,251,490,247,492,242,493,237,493,164,492,159,490,154,486,150,481,148,476,146,470,146,308,183,302,185,298,189,295,193,293,198,293,203,295,209,298,213,302,217,308,219" onmouseover="UpdateTooltip(this,0,73,event)" onfocus="UpdateTooltip(this,0,73,event)" onclick="return OnShapeClick(0,73,event);" onkeyup="OnShapeKey(0,73,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Controladoria Geral" origTitle="Controladoria Geral" TITLE="Controladoria Geral"  target="_top" COORDS="0,0,111,223,118,220,0,0,0,0" onmouseover="UpdateTooltip(this,0,64,event)" onfocus="UpdateTooltip(this,0,64,event)" onclick="return OnShapeClick(0,64,event);" onkeyup="OnShapeKey(0,64,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Controladoria Geral" origTitle="Controladoria Geral" TITLE="Controladoria Geral"  target="_top" COORDS="73,256,236,256,241,255,247,252,251,248,253,243,254,238,254,232,251,227,247,223,150,150,146,148,141,146,136,146,132,147,128,149,124,152,59,226,56,230,55,235,55,240,56,245,59,250,63,253,68,255,73,256" onmouseover="UpdateTooltip(this,0,64,event)" onfocus="UpdateTooltip(this,0,64,event)" onclick="return OnShapeClick(0,64,event);" onkeyup="OnShapeKey(0,64,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Presidência" origTitle="Presidência" TITLE="Presidência"  target="_top" COORDS="0,0,455,49,458,42,0,0,0,0" onmouseover="UpdateTooltip(this,0,55,event)" onfocus="UpdateTooltip(this,0,55,event)" onclick="return OnShapeClick(0,55,event);" onkeyup="OnShapeKey(0,55,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Presidência" origTitle="Presidência" TITLE="Presidência"  target="_top" COORDS="450,110,594,62,599,60,603,56,605,52,607,48,611,22,612,17,610,12,608,7,604,4,599,1,593,0,431,0,425,1,420,4,416,7,414,12,412,17,413,22,426,96,427,100,430,105,434,108,439,110,445,111,450,110" onmouseover="presidencia.png" onfocus="UpdateTooltip(this,0,55,event)" onclick="return OnShapeClick(0,55,event);" onkeyup="OnShapeKey(0,55,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>
