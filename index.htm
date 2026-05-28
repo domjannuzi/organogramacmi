@@ -6,21 +6,33 @@
 		<meta name="Categoria" content=""/>
 		<meta name="Palavras-chave" content=""/>
 		<meta name="Descrição" content=""/>
-		<meta name="Autor" content="REDAÇÃO"/>
+		<meta name="Autor" content="Administrador"/>
 		<meta name="Gerente" content=""/>
 		<meta name="Empresa" content=""/>
 
-		<title>Estrutura Adminsitrativa site final</title>
-		<script src="Estrutura Administrativa_arquivos/frameset.js" type="text/javascript" language="javascript"></script>
+		<title>Organograma CMI 1</title>
+		<script src="Organograma CMI 1.0_arquivos/frameset.js" type="text/javascript" language="javascript"></script>
 		<script type="text/javascript" language="javascript" >
 
+function FileEntry (pageIndex, pageID, pageName, priImage, secImage) 
+{
+	this.PageIndex = pageIndex;
+	this.PageID	  = pageID;
+	this.PageName = pageName;
+	this.PriImage = priImage;
+	this.SecImage = secImage;
+}
 
+var viewMgr = null;
 
 var g_FileList = new  Array(
- new FileEntry (1, 0, "ESTRUTURA ADMINISTRATIVA", "xaml_1.htm", "png_1.htm"),
- new FileEntry (2, 4, "Coordenadoria Geral da Câmara", "xaml_2.htm", "png_2.htm"),
- new FileEntry (3, 5, "Diretoria de Planejamento e Orçamento", "xaml_3.htm", "png_3.htm"),
- new FileEntry (4, 6, "Procuradoria Jurídica", "xaml_4.htm", "png_4.htm")
+ new FileEntry (1, 0, "Poder Legislativo", "xaml_1.htm", "png_1.htm"),
+ new FileEntry (2, 4, "ADM nivel 1", "xaml_2.htm", "png_2.htm"),
+ new FileEntry (3, 5, "ADM nível 2", "xaml_3.htm", "png_3.htm"),
+ new FileEntry (4, 7, "LEG nivel 1", "xaml_4.htm", "png_4.htm"),
+ new FileEntry (5, 13, "LEG nivel 2 Mesa ", "xaml_5.htm", "png_5.htm"),
+ new FileEntry (6, 9, "LEG nivel 2 Comissões", "xaml_6.htm", "png_6.htm"),
+ new FileEntry (7, 10, "LEG nivel 2 Plenário", "xaml_7.htm", "png_7.htm")
 
 );
 
@@ -747,18 +759,21 @@ function CreateHLObj (hlNode)
 	</head>
 	
 	<frameset id="frmstOuter" cols="237,*">
-		<frame src="Estrutura Administrativa_arquivos/toolbar.htm" name="frmToolbar" id="frmToolbar" title="Este quadro contém ferramentas para manipulação do desenho." frameborder="6" bordercolor="#999999" scrolling="no" marginheight="0" marginwidth="0" >
-		<frame src="Estrutura Administrativa_arquivos/png_1.htm" name="frmDrawing" title="Este quadro contém as páginas do desenho." marginheight="10" marginwidth="10" onload="if (parent.isUpLevel) FramePageLoaded()" >
+		<frame src="Organograma CMI 1.0_arquivos/toolbar.htm" name="frmToolbar" id="frmToolbar" title="Este quadro contém ferramentas para manipulação do desenho." frameborder="6" bordercolor="#999999" scrolling="no" marginheight="0" marginwidth="0" >
+		<frame src="Organograma CMI 1.0_arquivos/png_1.htm" name="frmDrawing" title="Este quadro contém as páginas do desenho." marginheight="10" marginwidth="10" onload="if (parent.isUpLevel) FramePageLoaded()" >
 
 		<noframes>
 			<body>
 
-				<h1>Estrutura Adminsitrativa site final</h1>
+				<h1>Organograma CMI 1</h1>
 				<ul>
-				<li><a href="Estrutura Administrativa_arquivos/png_1.htm">ESTRUTURA ADMINISTRATIVA</a></li>
-				<li><a href="Estrutura Administrativa_arquivos/png_2.htm">Coordenadoria Geral da Câmara</a></li>
-				<li><a href="Estrutura Administrativa_arquivos/png_3.htm">Diretoria de Planejamento e Orçamento</a></li>
-				<li><a href="Estrutura Administrativa_arquivos/png_4.htm">Procuradoria Jurídica</a></li>
+				<li><a href="Organograma CMI 1.0_arquivos/png_1.htm">Poder Legislativo</a></li>
+				<li><a href="Organograma CMI 1.0_arquivos/png_2.htm">ADM nivel 1</a></li>
+				<li><a href="Organograma CMI 1.0_arquivos/png_3.htm">ADM nível 2</a></li>
+				<li><a href="Organograma CMI 1.0_arquivos/png_4.htm">LEG nivel 1</a></li>
+				<li><a href="Organograma CMI 1.0_arquivos/png_5.htm">LEG nivel 2 Mesa </a></li>
+				<li><a href="Organograma CMI 1.0_arquivos/png_6.htm">LEG nivel 2 Comissões</a></li>
+				<li><a href="Organograma CMI 1.0_arquivos/png_7.htm">LEG nivel 2 Plenário</a></li>
 
 				</ul>
 			</body>
